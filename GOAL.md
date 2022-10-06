@@ -16,6 +16,9 @@ application, so we will be looking to find:
 * controllers
 * `unit tests`
 
+__NOTE:__  A small part of the project has been implemented as an example. 
+Complete the implementation to make it work.
+
 #### Front end
 * list of tasks
 * functionality to assign, reassign, ore un-assign an employee to a task
