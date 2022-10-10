@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -32,7 +33,7 @@ public class TaskControllerTest {
 		var t1 = Task.builder()
 						.id(1L)
 						.assignee(null)
-						.creationDate(LocalDate.of(200, 1, 1))
+						.creationDate(LocalDateTime.of(2022, 1, 1, 0, 0, 0))
 						.dueDate(dueDate)
 						.description("Task One")
 						.build();
