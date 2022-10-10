@@ -1,11 +1,11 @@
 package com.amaris.task.service;
 
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import com.amaris.task.domain.Employee;
+import com.amaris.task.domain.EmployeesReporsitory;
 import com.amaris.task.model.EmployeeDto;
 
 import lombok.AllArgsConstructor;
@@ -13,14 +13,13 @@ import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
+	private final EmployeesReporsitory employeesReporsitory;
 	
 
 	@Override
 	public List<EmployeeDto> getAllUsers() {
-		// TODO get the list of employees from the DB
-		
-		// return the dto list
-		return Collections.emptyList();
+		var employees = employeesReporsitory.findAll();
+		return employees.stream().map(this::entityToDto).toList();
 	}
 	
 	private EmployeeDto entityToDto(Employee entity) {

@@ -5,3 +5,12 @@ create table employee(
 );
 
 -- create the task table with id, description, due date and employee columns
+create table task(
+	id bigint not null auto_increment primary key,
+	description varchar(100) not null,
+	due_date date,
+	assignee_id bigint,
+	creation_date date not null,
+	last_update date,
+	constraint fk_task_employee foreign key (assignee_id) references employee(id)
+);
