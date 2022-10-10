@@ -10,7 +10,7 @@ create table task(
 	description varchar(100) not null,
 	due_date date,
 	assignee_id bigint,
-	creation_date date not null,
-	last_update date,
+	creation_date timestamp not null,
+	last_update timestamp,
 	constraint fk_task_employee foreign key (assignee_id) references employee(id)
 );

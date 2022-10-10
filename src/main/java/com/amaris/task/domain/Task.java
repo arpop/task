@@ -1,6 +1,7 @@
 package com.amaris.task.domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -43,9 +44,9 @@ public class Task {
 	
 	@CreationTimestamp
 	@Column(name = "creation_date", nullable = false)
-	private LocalDate creationDate;
+	private LocalDateTime creationDate;
 	
 	@UpdateTimestamp
 	@Column(name = "last_update")
-	private LocalDate lastUpdate;
+	private LocalDateTime lastUpdate;
 }

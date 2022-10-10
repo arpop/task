@@ -1,6 +1,7 @@
 package com.amaris.task.model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -11,7 +12,7 @@ public class TaskDto {
 	private Long id;
 	private String description;
 	private LocalDate dueDate;
-	private LocalDate creationDate;
-	private LocalDate lastUpdate;
+	private LocalDateTime creationDate;
+	private LocalDateTime lastUpdate;
 	private Long assignee;
 }

@@ -32,7 +32,6 @@ public class TaskControllerTest {
 		var t1 = Task.builder()
 						.id(1L)
 						.assignee(null)
-						.creationDate(LocalDate.of(200, 1, 1))
 						.dueDate(dueDate)
 						.description("Task One")
 						.build();
