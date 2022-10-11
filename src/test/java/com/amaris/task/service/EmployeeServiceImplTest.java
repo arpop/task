@@ -12,12 +12,12 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.amaris.task.domain.Employee;
-import com.amaris.task.domain.EmployeesReporsitory;
+import com.amaris.task.domain.EmployeesRepository;
 
 @ExtendWith(MockitoExtension.class)
 class EmployeeServiceImplTest {
 	@Mock
-	private EmployeesReporsitory employeesReporsitory;
+	private EmployeesRepository employeesReporsitory;
 	
 	@InjectMocks
 	private EmployeeServiceImpl service;

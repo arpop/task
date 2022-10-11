@@ -3,14 +3,11 @@ package com.amaris.task.service;
 import java.util.Collections;
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.amaris.task.domain.Employee;
 import com.amaris.task.model.EmployeeDto;
 
 import lombok.AllArgsConstructor;
 
-@Service
 @AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
 	
