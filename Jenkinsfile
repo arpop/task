@@ -27,8 +27,8 @@ pipeline {
         }
         stage('Preparing release') {
             steps {
-                dir('mito') {
-                    sh "mvn -DdryRun release:prepare -DautoVersionSubmodules=true -DreleaseVersion=\"${env.releaseVersion}\" -DdevelopmentVersion=\"${env.developmentVersion}\" -DignoreSnapshots=true"
+                dir('/') {
+                    sh "mvn release:prepare -DautoVersionSubmodules=true -DreleaseVersion=\"${env.releaseVersion}\" -DdevelopmentVersion=\"${env.developmentVersion}\" -DignoreSnapshots=true"
                 }
             }
         }
