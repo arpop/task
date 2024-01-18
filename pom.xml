@@ -70,5 +70,9 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<scm>
+	    <connection>scm:git:git@github.com:arpop/task.git</connection>
+	    <developerConnection>scm:git:git@github.com:arpop/task.git</developerConnection>
+	    <url>https://github.com/arpop/task</url>
+	</scm>
 </project>
