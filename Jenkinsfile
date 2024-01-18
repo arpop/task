@@ -27,9 +27,7 @@ pipeline {
         }
         stage('Preparing release') {
             steps {
-                dir('/') {
-                    sh "mvn release:prepare -DautoVersionSubmodules=true -DreleaseVersion=\"${env.releaseVersion}\" -DdevelopmentVersion=\"${env.developmentVersion}\" -DignoreSnapshots=true"
-                }
+                sh "mvn release:prepare -DautoVersionSubmodules=true -DreleaseVersion=\"${env.releaseVersion}\" -DdevelopmentVersion=\"${env.developmentVersion}\" -DignoreSnapshots=true"
             }
         }
     }
